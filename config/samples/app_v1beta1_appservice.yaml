@@ -9,4 +9,9 @@ metadata:
     app.kubernetes.io/created-by: k8s-opdemo
   name: appservice-sample
 spec:
-  # TODO(user): Add fields here
+  size: 3
+  image: nginx
+  ports:
+    - port: 80
+      targetPort: 80
+      nodePort: 30000
