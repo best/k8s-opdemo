@@ -1,0 +1,12 @@
+apiVersion: app.thislab.cn/v1beta1
+kind: AppService
+metadata:
+  labels:
+    app.kubernetes.io/name: appservice
+    app.kubernetes.io/instance: appservice-sample
+    app.kubernetes.io/part-of: k8s-opdemo
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: k8s-opdemo
+  name: appservice-sample
+spec:
+  # TODO(user): Add fields here

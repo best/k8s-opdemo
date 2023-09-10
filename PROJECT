@@ -10,4 +10,14 @@ plugins:
   scorecard.sdk.operatorframework.io/v2: {}
 projectName: k8s-opdemo
 repo: github.com/best/k8s-opdemo
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: thislab.cn
+  group: app
+  kind: AppService
+  path: github.com/best/k8s-opdemo/api/v1beta1
+  version: v1beta1
 version: "3"
